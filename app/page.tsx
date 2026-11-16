@@ -42,19 +42,19 @@ const FloatingLamp = ({ className, style, reverse = false }: { className: string
 
 export default function Home() {
   const events = [
-    {
-      title_ceremony: "Bhog Shri Akhand Path Sahib",
-      image: "/assets/guru.webp",
-      venue_address: <>Saturday, 28th November 2026 <br />At Our Residence<br />108, Basant Avenue, Amritsar<br />11:30 am Onwards<br />Followed by Kirtan & Guru Ka Langar</>,
-      link: "https://maps.app.goo.gl/YtFgUcnwemX14ubf8",
-    },
+    // {
+    //   title_ceremony: "Bhog Shri Akhand Path Sahib",
+    //   image: "/assets/guru.webp",
+    //   venue_address: <>Saturday, 28th November 2026 <br />At Our Residence<br />108, Basant Avenue, Amritsar<br />11:30 am Onwards<br />Followed by Kirtan & Guru Ka Langar</>,
+    //   link: "https://maps.app.goo.gl/YtFgUcnwemX14ubf8",
+    // },
 
-    {
-      title_ceremony: "Jaago Night",
-      image: "/assets/jaggo.webp",
-      venue_address: <>Friday, 4th December 2026<br />At Our Residence<br />108, Basant Avenue, Amritsar<br /> 7:00 pm Onwards</>,
-      link: "https://maps.app.goo.gl/YtFgUcnwemX14ubf8",
-    },
+    // {
+    //   title_ceremony: "Jaago Night",
+    //   image: "/assets/jaggo.webp",
+    //   venue_address: <>Friday, 4th December 2026<br />At Our Residence<br />108, Basant Avenue, Amritsar<br /> 7:00 pm Onwards</>,
+    //   link: "https://maps.app.goo.gl/YtFgUcnwemX14ubf8",
+    // },
 
 
     {
@@ -71,20 +71,20 @@ export default function Home() {
 
 
 
-    {
-      title_ceremony: "Anand Karaj",
-      image: "/assets/anand_amul.png",
-      venue_address: <>Sunday, 6th December 2026<br />Gurdwara Chhevin Patshahi <br />
-        A Block, Ranjit Avenue, Amritsar<br />10:00 am Onwards<br /></>,
-      link: "https://maps.app.goo.gl/Uhdsez1zWk68xJmt6",
-      venue_address2: <><b>Lunch</b><br />
+    // {
+    //   title_ceremony: "Anand Karaj",
+    //   image: "/assets/anand_amul.png",
+    //   venue_address: <>Sunday, 6th December 2026<br />Gurdwara Chhevin Patshahi <br />
+    //     A Block, Ranjit Avenue, Amritsar<br />10:00 am Onwards<br /></>,
+    //   link: "https://maps.app.goo.gl/Uhdsez1zWk68xJmt6",
+    //   venue_address2: <><b>Lunch</b><br />
 
-        1:00 PM<br />
+    //     1:00 PM<br />
 
-        Comfort Inn Alstonia
-        Ranjit Avenue, </>,
-      link2: "https://maps.app.goo.gl/k1cGqs33T8zJEyQw5",
-    },
+    //     Comfort Inn Alstonia
+    //     Ranjit Avenue, </>,
+    //   link2: "https://maps.app.goo.gl/k1cGqs33T8zJEyQw5",
+    // },
 
   ];
   const audioRef = useRef<HTMLAudioElement | null>(null);
