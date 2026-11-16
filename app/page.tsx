@@ -42,19 +42,6 @@ const FloatingLamp = ({ className, style, reverse = false }: { className: string
 
 export default function Home() {
   const events = [
-    // {
-    //   title_ceremony: "Bhog Shri Akhand Path Sahib",
-    //   image: "/assets/guru.webp",
-    //   venue_address: <>Saturday, 28th November 2026 <br />At Our Residence<br />108, Basant Avenue, Amritsar<br />11:30 am Onwards<br />Followed by Kirtan & Guru Ka Langar</>,
-    //   link: "https://maps.app.goo.gl/YtFgUcnwemX14ubf8",
-    // },
-
-    // {
-    //   title_ceremony: "Jaago Night",
-    //   image: "/assets/jaggo.webp",
-    //   venue_address: <>Friday, 4th December 2026<br />At Our Residence<br />108, Basant Avenue, Amritsar<br /> 7:00 pm Onwards</>,
-    //   link: "https://maps.app.goo.gl/YtFgUcnwemX14ubf8",
-    // },
 
 
     {
@@ -216,7 +203,7 @@ export default function Home() {
 
           <div className="flex justify-center mt-20 lg:mt-40">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 lg:gap-32 3xl:gap-50">
-              {events.map((event, i) => (
+              {/* {events.map((event, i) => (
                 <div key={i} className="flex flex-col items-center text-center">
                   <img
                     src={event.image}
@@ -256,7 +243,36 @@ export default function Home() {
                     </>
                   )}
                 </div>
-              ))}
+              ))} */}
+
+              {events.map((event, i) => (
+  <div key={i} className="flex flex-col items-center text-center">
+    <img
+      src={event.image}
+      alt={event.title_ceremony}
+      className="w-75 md:w-76 lg:w-80 3xl:w-100 h-auto"
+    />
+
+    <h2 className="text-[#15528A] font-playfair-display text-3xl md:text-2xl lg:text-[42px] mt-4">
+      {event.title_ceremony}
+    </h2>
+
+    <p className="text-[#15528A] font-playfair-display text-sm md:text-base mt-2">
+      <span className="text-sm md:text-base lg:text-xl">
+        {event.venue_address}
+      </span>
+    </p>
+
+    <a
+      href={event.link}
+      className="text-[#15528A] underline md:text-sm text-[12px] mt-2 font-playfair-display"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      See the route
+    </a>
+  </div>
+))}
             </div>
           </div>
 
