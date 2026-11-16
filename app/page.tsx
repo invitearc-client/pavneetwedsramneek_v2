@@ -137,9 +137,9 @@ export default function Home() {
 
         <RoseHeroTemp />
 
-        <div className="pt-38 md:pt-88 lg:pt-150 3xl:pt-200 relative z-10">
+        <div className="pt-38 md:pt-88 lg:pt-80 3xl:pt-40 relative z-10">
           <h2 className="text-[#AE633A] text-center leading-tight text-2xl md:text-5xl lg:text-[80px] pb-120
-                          md:pb-350 lg:pb-470 3xl:pb-550 flex flex-col items-center gap-y-0 lg:gap-y-5 ">
+                          md:pb-350 lg:pb-570 3xl:pb-700 flex flex-col items-center gap-y-0 lg:gap-y-5 ">
 
             <span className="great-vibes-regular font-semibold">Pavneet</span>
 
@@ -246,33 +246,33 @@ export default function Home() {
               ))} */}
 
               {events.map((event, i) => (
-  <div key={i} className="flex flex-col items-center text-center">
-    <img
-      src={event.image}
-      alt={event.title_ceremony}
-      className="w-75 md:w-76 lg:w-80 3xl:w-100 h-auto"
-    />
+                <div key={i} className="flex flex-col items-center text-center">
+                  <img
+                    src={event.image}
+                    alt={event.title_ceremony}
+                    className="w-75 md:w-76 lg:w-80 3xl:w-100 h-auto"
+                  />
 
-    <h2 className="text-[#15528A] font-playfair-display text-3xl md:text-2xl lg:text-[42px] mt-4">
-      {event.title_ceremony}
-    </h2>
+                  <h2 className="text-[#15528A] font-playfair-display text-3xl md:text-2xl lg:text-[42px] mt-4">
+                    {event.title_ceremony}
+                  </h2>
 
-    <p className="text-[#15528A] font-playfair-display text-sm md:text-base mt-2">
-      <span className="text-sm md:text-base lg:text-xl">
-        {event.venue_address}
-      </span>
-    </p>
+                  <p className="text-[#15528A] font-playfair-display text-sm md:text-base mt-2">
+                    <span className="text-sm md:text-base lg:text-xl">
+                      {event.venue_address}
+                    </span>
+                  </p>
 
-    <a
-      href={event.link}
-      className="text-[#15528A] underline md:text-sm text-[12px] mt-2 font-playfair-display"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      See the route
-    </a>
-  </div>
-))}
+                  <a
+                    href={event.link}
+                    className="text-[#15528A] underline md:text-sm text-[12px] mt-2 font-playfair-display"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See the route
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
 

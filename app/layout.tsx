@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "PAVNEET & RAMNEEK ",
-    description: "Join as they begin their forever. 28 November, 4, 5 & 6 December, 2026",
+    description: "Join as they begin their forever. 5 December, 2026",
     url: "https://pavneetwedsramneek.vercel.app/",
     siteName: "InviteArc",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "PAVNEET & RAMNEEK ",
-    description: "Join as they begin their forever. 28 November, 4, 5 & 6 December, 2026",
+    description: "Join as they begin their forever. 5 December, 2026",
     images: ["/og.jpg"],
   },
 
