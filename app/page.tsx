@@ -281,7 +281,7 @@ export default function Home() {
               </p>
             </div>
             <Image
-              src="/assets/couple_n.webp"
+              src="/assets/couple_2n.webp"
               alt="couple" width={900} height={1200}
               className="w-108 h-104 md:w-205 md:h-198 lg:w-440 lg:h-374 3xl:w-480 3xl:h-463 object-cover" />
           </div>
