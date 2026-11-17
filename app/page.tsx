@@ -47,10 +47,10 @@ export default function Home() {
     {
       title_ceremony: "Wedding Celebrations",
       image: "/assets/wedding.webp",
-      venue_address: <>
-        Saturday, 5th December 2026<br /> Near Guru Gobind Singh Avenue, Jalandhar <br /> <b>Sehra Bandi</b><br />
+       venue_address: <>
+        Saturday, 5th December 2026<br /> <span className="text-xl font-semibold">Sehra Bandi</span><br />
         4:00 PM<br />
-        At Our Residence<br /><b>Departure of Barat</b><br />
+        At Our Residence<br /><span className="text-xl font-semibold">Departure of Barat</span><br />
         7:00 PM<br />
         Lilly Resort, Vallah, Amritsar</>,
       link: "https://maps.app.goo.gl/dcvRv6vipfmxpyNv5",
@@ -58,20 +58,7 @@ export default function Home() {
 
 
 
-    // {
-    //   title_ceremony: "Anand Karaj",
-    //   image: "/assets/anand_amul.png",
-    //   venue_address: <>Sunday, 6th December 2026<br />Gurdwara Chhevin Patshahi <br />
-    //     A Block, Ranjit Avenue, Amritsar<br />10:00 am Onwards<br /></>,
-    //   link: "https://maps.app.goo.gl/Uhdsez1zWk68xJmt6",
-    //   venue_address2: <><b>Lunch</b><br />
-
-    //     1:00 PM<br />
-
-    //     Comfort Inn Alstonia
-    //     Ranjit Avenue, </>,
-    //   link2: "https://maps.app.goo.gl/k1cGqs33T8zJEyQw5",
-    // },
+   
 
   ];
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -129,10 +116,10 @@ export default function Home() {
         {playing ? "⏸" : "▶"}
       </button>
 
-      <audio ref={audioRef} src="/assets/laavan.mp3" loop preload="auto" playsInline />
+      <audio ref={audioRef} src="/assets/aaj_song.mp3" loop preload="auto" playsInline />
 
       {/* hero section */}
-      <div className=" bg-[url('/assets/jodi_bg.webp')] md:bg-[url('/assets/jodi_desktop.webp')] 3xl:bg-[url('/assets/jodi_desktop.webp')]
+      <div className=" bg-[url('/assets/jodi_bg_n.webp')] md:bg-[url('/assets/jodi_desktop_n.webp')] 3xl:bg-[url('/assets/jodi_desktop_n.webp')]
                        bg-cover bg-no-repeat bg-top md:bg-position-[center_top] lg:bg-center w-full overflow-hidden relative">
 
         <RoseHeroTemp />
@@ -151,7 +138,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center text-center gap-6 mt-0 lg:pt-50 pt-0">
             <h2 className="text-[#15528A] text-[12px] md:text-xl lg:text-2xl md:pt-8 font-playfair-display">
-              ਸਚੁ ਪਿਆਰਾ ਤਬ ਜਾਨੀਐ <br /> ਜਾ ਗੁਰੂ ਸਬਦੁ ਵਿਚਾਰਿ ॥
+            ੴ <br/>  ਸਚੁ ਪਿਆਰਾ ਤਬ ਜਾਨੀਐ <br /> ਜਾ ਗੁਰੂ ਸਬਦੁ ਵਿਚਾਰਿ ॥
             </h2>
 
             <Image

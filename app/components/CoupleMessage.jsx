@@ -2,7 +2,7 @@
 import Image from "next/image";
 export default function CoupleMessage() {
   return (
-    <div className="bg-[url('/assets/bg_two4.webp')] bg-cover bg-no-repeat">
+    <div className="bg-[url('/assets/bg_two4_n.webp')] bg-cover bg-no-repeat">
       <div className="">
         <h1 className="text-2xl md:text-2xl lg:text-[36px] text-center text-[#15528A] lg:pt-40 pt-20 jacques-francois">
           INTRODUCING
@@ -11,7 +11,7 @@ export default function CoupleMessage() {
           The Couple
         </h2>
         <div className="relative flex flex-col items-center mt-12 md:mt-12 lg:mt-20 3xl:mt-30">
-          <h2 className=" text-[#15528A] text-left text-xl md:text-4xl lg:text-[68px] 3xl:text-[78px] pl-55 md:pl-114 lg:pl-180 3xl:pl-240 md:mt-2 lg:mt-3 3xl:mt-5 flex flex-col justify-end mt-[-5]">
+          <h2 className=" text-[#15528A] text-left text-[16px] md:text-4xl lg:text-[68px] 3xl:text-[78px] pl-55 md:pl-114 lg:pl-180 3xl:pl-240 md:mt-2 lg:mt-3 3xl:mt-5 flex flex-col justify-end mt-[-5]">
             <span className="jacques-francois">PAVNEET</span>
             <span className="lavishly-yours-regular opacity-50 text-[#6CB9FF] text-5xl md:text-7xl lg:text-[150px] tracking-widest -mt-6 pl-5 md:-mt-9 md:pl-10 lg:-mt-19 lg:pl-18">
               &
@@ -113,13 +113,18 @@ export default function CoupleMessage() {
           we’ve gathered a few thoughtful details we’d love for you to know
           before the big day.
         </h2> */}
-
-        <div className="flex justify-center md:justify-end md:mt-2 mt-100 lg:mt-295 3xl:mt-320 md:pr-5 lg:pr-10 3xl:pr-30">
+        <div className="flex flex-col justify-center items-center mt-100 lg:mt-295 3xl:mt-320 ">
+          <img src="/assets/logo.png" alt="logo" className="w-45" />
+          {/* <h2 className="font-cormorant font-bold text-[24px] md:text-[20px] lg:text-[28px] text-[#15528A] pt-3">
+            #MehakTaapavii
+          </h2> */}
+        </div>
+        <div className="flex justify-center md:justify-end md:mt-2 mt-20 md:pr-5 lg:pr-10 3xl:pr-30">
           <div className="">
             {/* <h2 className="font-cormorant-upright font-semibold text-center text-2xl md:text-2xl lg:text-[30px] text-[#15528A] pt-10 md:pt-190 lg:pt-102 3xl:pt-150 md:leading-8 lg:leading-14 leading-8 px-10 md:px-0">
               #WhenSargunMetKopal
             </h2> */}
-            <h2 className="font-cormorant-upright font-semibold text-center text-4xl md:text-4xl lg:text-[64px] text-[#15528A] pt-0 md:pt-190 lg:pt-102 3xl:pt-150 md:leading-8 lg:leading-14 leading-8 px-10 md:px-0">
+            <h2 className="font-cormorant-upright font-semibold text-center text-4xl md:text-4xl lg:text-[64px] text-[#15528A] pt-0 md:pt-190 lg:pt-30 3xl:pt-50 md:leading-8 lg:leading-14 leading-8 px-10 md:px-0">
               Looking forward to <br className="hidden md:block" /> seeing you
             </h2>
             <div className="flex flex-col md:gap-0 gap-0 lg:gap-0 justify-center items-center md:not-first:mt-4">
@@ -130,7 +135,7 @@ export default function CoupleMessage() {
                   className="h-8 w-8 md:w-8 md:h-8 lg:w-[42px] lg:h-[42px] 3xl:w-20 3xl:h-20"
                 />
               </a> */}
-              <h2 className="font-parisienne-regular font-bold text-[18px] md:text-[20px] lg:text-[28px] text-[#15528A] pt-3">
+              <h2 className="font-cormorant font-bold text-[18px] md:text-[20px] lg:text-[28px] text-[#15528A] pt-3">
                 RSVP
               </h2>
 
@@ -142,17 +147,20 @@ export default function CoupleMessage() {
                 With best compliments
                 <br />
                 Navi & Jot
+                <br />
+                7009067029 <br />
+                9569185437
               </h2>
             </div>
           </div>
         </div>
-      <Image
-  src="/assets/couple_bottom2.webp"
-  alt="couple"
-  width={900}
-  height={1200}
-  className="w-full h-auto object-cover mt-30"
-/>
+        <Image
+          src="/assets/couple_bottom2.webp"
+          alt="couple"
+          width={900}
+          height={1200}
+          className="w-full h-auto object-cover mt-10"
+        />
       </div>
     </div>
   );
